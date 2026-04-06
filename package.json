@@ -10,7 +10,7 @@
     "start": "node ./server/app.js",
     "pretest": "eslint ./server --fix",
     "test": "echo \"Tests complete\"",
-    "heroku-postbuild": "webpack"
+    "heroku-postbuild": "webpack --mode production"
   },
   "keywords": [
     "Node",
@@ -18,7 +18,7 @@
     "Redis",
     "Login"
   ],
-  "author": "Cody Van De Mark / Austin Willoughby",
+  "author": "Ricky Yu",
   "license": "Apache 2.0",
   "dependencies": {
     "bcrypt": "^6.0.0",
