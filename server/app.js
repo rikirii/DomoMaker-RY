@@ -21,7 +21,7 @@ mongoose.connect(dbURI).catch((err) =>{
 
 const app = express();
 
-// helmet is a security library for express: sets a bunch of default options for use to obsure info from malicious attacks
+// helmet is a security library for express: sets a bunch of default options for use to obsure info from malicious attackss
 app.use(helmet());
 app.use('/assets', express.static(path.resolve(`${__dirname}/../hosted`)));
 app.use(favicon(`${__dirname}/../hosted/img/favicon.png`));
